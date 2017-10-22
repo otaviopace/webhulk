@@ -1,5 +1,5 @@
-hash: 5521449d92ba81a56a0fd4a7e3d76290964e680cb16dbbdec20049c6821589b6
-updated: 2017-10-16T10:28:09.464818-02:00
+hash: 0df50ea1bfe5674147d6ffcb1391f8908eb5b641331c38a0504cd5042b6a8f9c
+updated: 2017-10-21T23:26:39.316333019-02:00
 imports:
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
@@ -14,13 +14,15 @@ imports:
   subpackages:
   - parser
 - name: github.com/fatih/structs
-  version: 7e5a8eef611ee84dd359503f3969f80df4c50723
+  version: f5faa72e73092639913f5833b75e1ac1d6bc7a63
 - name: github.com/flosch/pongo2
   version: 1f4be1efe3b3529b7e58861f75d70120a9567dc4
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
 - name: github.com/iris-contrib/formBinder
   version: ad9fb86c356f971f30319c40ddbdcf72129a2791
+- name: github.com/jmoiron/sqlx
+  version: 3379e5993990b1f927fc8db926485e6f6becf2d2
 - name: github.com/Joker/jade
   version: 35b3f5bdbcc920cd31f4870536dbc63be8530541
 - name: github.com/json-iterator/go
@@ -30,7 +32,7 @@ imports:
 - name: github.com/kataras/golog
   version: 2ed680e7b1f34147164fa8073373e14fce02ac30
 - name: github.com/kataras/iris
-  version: 0d1de4cc102b89df7f28041cf506d0f55efc2e2e
+  version: eeea656b255fbafab40daa247bd991072566ab88
   subpackages:
   - cache
   - cache/cfg
@@ -86,25 +88,25 @@ imports:
 - name: github.com/spf13/cobra
   version: 7b2c5ac9fc04fc5efafb60700713d4fa609b777b
 - name: github.com/spf13/pflag
-  version: a9789e855c7696159b7db0db7f440b449edf2b31
+  version: 97afa5e7ca8a08a383cb259e06636b5e2cc7897f
 - name: golang.org/x/crypto
-  version: 9419663f5a44be8b34ca85f08abc5fe1be11f8a3
+  version: edd5e9b0879d13ee6970a50153d85b8fec9f7686
   subpackages:
   - acme
   - acme/autocert
   - ssh/terminal
 - name: golang.org/x/net
-  version: f315505cf3349909cdf013ea56690da34e96a451
+  version: cd69bc3fc700721b709c3a59e16e24c67b58f6ff
   subpackages:
   - html
   - html/atom
 - name: golang.org/x/sys
-  version: 9ccfe848b9db8435a24c424abbc07a921adf1df5
+  version: 8dbc5d05d6edcc104950cc299a1ce6641235bc86
   subpackages:
   - unix
   - windows
 - name: gopkg.in/kataras/iris.v8
   version: eeea656b255fbafab40daa247bd991072566ab88
 - name: gopkg.in/yaml.v2
-  version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
+  version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
 testImports: []

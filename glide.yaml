@@ -6,3 +6,4 @@ import:
 - package: gopkg.in/kataras/iris.v8
   version: v8.5.2
 - package: github.com/spf13/cobra
+- package: github.com/jmoiron/sqlx
