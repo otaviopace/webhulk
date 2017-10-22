@@ -7,3 +7,5 @@ import:
   version: v8.5.2
 - package: github.com/spf13/cobra
 - package: github.com/jmoiron/sqlx
+- package: gopkg.in/lucsky/cuid.v1
+  version: v1.0.1

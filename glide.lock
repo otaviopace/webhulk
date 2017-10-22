@@ -1,5 +1,5 @@
-hash: 0df50ea1bfe5674147d6ffcb1391f8908eb5b641331c38a0504cd5042b6a8f9c
-updated: 2017-10-21T23:26:39.316333019-02:00
+hash: 49bf6ce84966d59c4d475d0828d7a4eb23825493ce2bbeeb64454e3259faf97c
+updated: 2017-10-22T00:35:14.617394094-02:00
 imports:
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
@@ -107,6 +107,8 @@ imports:
   - windows
 - name: gopkg.in/kataras/iris.v8
   version: eeea656b255fbafab40daa247bd991072566ab88
+- name: gopkg.in/lucsky/cuid.v1
+  version: ca80578116af5e9cad271306a1f072d6221d3020
 - name: gopkg.in/yaml.v2
   version: eb3733d160e74a9c7e442f435eb3bea458e1d19f
 testImports: []
