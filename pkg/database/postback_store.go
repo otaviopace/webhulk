@@ -1,4 +1,4 @@
-package postback
+package database
 
 import (
 	"sync"
@@ -14,7 +14,7 @@ type PostbackStore struct {
 func NewPostbackStore(db *sqlx.DB) (*PostbackStore, error) {
 	return &PostbackStore{
 		db:    db,
-		mutex: sync.RWMUtex{},
+		mutex: sync.RWMutex{},
 	}, nil
 }
 
@@ -22,11 +22,14 @@ func (s *PostbackStore) Store(p *Postback) (*Postback, error) {
 	s.mutex.Lock()
 	defer s.mutex.Unlock()
 
-	_, err := db.NamedExec(`
-		INSERT INTO postback
-		(id, status, payload, created_at)
-		VALUES (:id, :status, :payload, :created_at)
-	`, p)
+	query := `
+		INSERT INTO postbacks
+			(id, status, payload, created_at)
+		VALUES
+			(:id, :status, :payload, :created_at)
+	`
+
+	_, err := s.db.NamedExec(query, p)
 
 	if err != nil {
 		return nil, err
@@ -41,11 +44,19 @@ func (s *PostbackStore) Retrieve(id string) (*Postback, bool) {
 
 	p := &Postback{}
 
-	err := db.Get(p, `SELECT * FROM postbacks WHERE id = $1`, id)
+	query := `
+		SELECT
+			id, status, payload, created_at
+		FROM postbacks
+		WHERE
+			id = $1
+	`
+
+	err := s.db.Get(p, query, id)
 
 	if err != nil {
 		return nil, false
 	}
 
-	return p
+	return p, true
 }

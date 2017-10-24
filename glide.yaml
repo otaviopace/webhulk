@@ -9,3 +9,4 @@ import:
 - package: github.com/jmoiron/sqlx
 - package: gopkg.in/lucsky/cuid.v1
   version: v1.0.1
+- package: github.com/lib/pq

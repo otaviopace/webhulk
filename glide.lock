@@ -1,5 +1,5 @@
-hash: 49bf6ce84966d59c4d475d0828d7a4eb23825493ce2bbeeb64454e3259faf97c
-updated: 2017-10-22T00:35:14.617394094-02:00
+hash: 46e75716da2d1504fb0f78564c636c513e39edea919fbd59b0be87cb03c181e4
+updated: 2017-10-23T08:42:15.892662939-02:00
 imports:
 - name: github.com/aymerick/raymond
   version: 72acac2207479d21dd45898c2a4264246c818148
@@ -23,10 +23,12 @@ imports:
   version: ad9fb86c356f971f30319c40ddbdcf72129a2791
 - name: github.com/jmoiron/sqlx
   version: 3379e5993990b1f927fc8db926485e6f6becf2d2
+  subpackages:
+  - reflectx
 - name: github.com/Joker/jade
   version: 35b3f5bdbcc920cd31f4870536dbc63be8530541
 - name: github.com/json-iterator/go
-  version: 6240e1e7983a85228f7fd9c3e1b6932d46ec58e2
+  version: 7e3b7760242a65d1627e58ef428f1e2769caf85d
 - name: github.com/juju/errors
   version: c7d06af17c68cd34c835053720b21f6549d9b0ee
 - name: github.com/kataras/golog
@@ -75,6 +77,10 @@ imports:
   - gzip
 - name: github.com/klauspost/cpuid
   version: ae7887de9fa5d2db4eaa8174a7eff2c1ac00f2da
+- name: github.com/lib/pq
+  version: b609790bd85edf8e9ab7e0f8912750a786177bcf
+  subpackages:
+  - oid
 - name: github.com/microcosm-cc/bluemonday
   version: 68fecaef60268522d2ac3f0123cec9d3bcab7b6e
 - name: github.com/russross/blackfriday
